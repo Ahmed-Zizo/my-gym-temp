@@ -1,0 +1,408 @@
+/*start glopal rules*/
+*{
+   margin:0px;
+   box-sizing:border-box;
+}
+
+div.container{
+   width:1100px;
+   margin:auto;
+}
+
+body{
+   font-family: 'Poppins', sans-serif;
+   position:relative;
+   -ms-text-size-adjust: 100%;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+   color:#7a7a7a;
+   letter-spacing:.5px;
+   font-size:80%;
+   line-height:25px
+}
+h1{
+   font-weight:800;
+   text-transform:uppercase;
+}
+h2{
+    text-transform:uppercase;
+    font-size:200%;
+    font-weight:900;
+}
+a{text-decoration:none;color:#fff;}
+span{color:#ed563b;}
+
+ul,li{list-style:none;}
+/*end global rules*/
+
+/*start the header*/
+header{
+   width:100%;
+   height:80px;
+   background-color:rgba(250,250,250,.1);
+   position:absolute;
+   z-index:2;
+   -webkit-transition:all .5s ease-in-out;
+   -moz-transition:all .5s ease-in-out;
+   -o-transition:all .5s ease-in-out;
+   transition:all .5s ease-in-out;
+   color:#ffffff;
+   text-transform:uppercase;
+}
+header nav{
+   width:100%;
+   overflow:hidden;
+}
+header nav ul{float:right;margin-right:80px;margin-top:10px}
+
+header nav ul li{display:inline-block;}
+
+header nav ul li a{
+   text-decoration:none;
+   color:#ffffff;
+   padding:12px;
+   letter-spacing:1.5px;
+   font-size:80%;
+}
+
+header nav ul li:last-child a{
+   text-decoration:none;
+   color:#ffffff;
+   background-color:#ed563b;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active{color:#ed563b;}
+
+
+header nav ul li:last-child a:hover{background-color:#db7462;color:#fff}
+
+header nav h1{
+   margin-left:60px;
+}
+
+/*end the header*/
+
+/*start slider*/
+.slider{
+   width:100%;
+   height:1000px;
+   position:relative;
+   text-transform:uppercase;
+}
+
+.slider .video video{
+   width:100%;
+   height:1000px;
+   object-fit:cover;
+   z-index:-1;
+}
+.slider .text-vid{
+   width:100%;
+   height:100%;
+   position:absolute;
+   top:0px;
+   background-color: rgba(35,45,57,0.8);
+   text-align:center;
+   color:#ffffff;
+   font-weight:900;
+   z-index:1;
+}
+.slider .text-vid h6{
+   margin-top:278px;
+   font-size:20px;
+}
+.slider .text-vid h1{font-size:90px;}
+
+.slider .text-vid a{
+   text-decoration:none;
+   padding:15px;
+   color:#fff;
+   font-weight:400;
+   background-color:#ed563b;
+   cursor:pointer;
+}
+
+.slider .text-vid a:hover{background-color:#db7462;color:#fff;}
+
+/*end slider*/
+/*start programs*/
+section.programs{margin:80px}
+
+section.programs .choose{text-align:center;margin-bottom:80px}
+
+section.programs .choose h1{font-size:160%;}
+
+section.programs .choose img{margin-bottom:20px}
+
+section.programs .progs>div{
+   width:47%;
+   display:inline-block;
+   margin-bottom:80px;
+   overflow:hidden;
+}
+
+section.programs .progs>div .left-icon{
+   float:left;
+   margin-right:20px;
+}
+
+section.programs .progs>div .right h4{
+   text-transform:capitalize;
+   font-weight:700;
+   color:#232d39;
+   font-size:120%
+}
+
+section.programs .progs>div .right p a{
+   text-decoration:none;
+   color:#0056b3;
+}
+section.programs .progs>div .right a{
+   text-decoration:none;
+   color:#ed563b;
+}
+
+/*end programs*/
+/*start become a member*/
+section.join{
+   padding:120px 0px;
+   text-align:center;
+   color:#fff;
+   background-image:url(../imgs/cta-bg.jpg);
+   background-position:center center;
+   background-size:cover;
+}
+section.join h1{
+   font-size:40px;
+}
+section.join p{
+   color: #fff;
+   font-size:15px;
+   margin:15px 0px 25px;
+}
+
+section.join a{
+   text-decoration:none;
+   color:#fff;
+   background-color:#ed563b;
+   padding:12px;
+}
+section.join a:hover{background-color:#db7462;color:#fff}
+
+/*end become a member*/
+/*start our-classes*/
+section.our-classes{
+    margin:150px 0px 100px;
+    text-align:center;
+}
+
+.our-classes img{
+    margin:15px auto;
+}
+
+.classes{
+    margin-bottom:100px;
+    overflow:hidden;
+}
+.classes .container div{
+    display:inline-block
+}
+.classes .container .click{
+    float:left;
+    width:35%;
+    font-size:130%;
+    font-weight:600;
+}
+.classes .container .click>div{
+    cursor: pointer;
+    width:100%;
+    margin-bottom:25px;
+    padding:30px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+    border-radius:5px;
+}
+.classes .container .click>div:hover span{color:#ed563b;}
+.classes .container .click .click5{
+    background-color:#ed563b;
+    color:#fff;
+    padding:20px 30px;
+}
+.classes .container .click .click5:hover{background-color:#db7462;color:#fff}
+.classes .container .click>div span{color:black;}
+
+.classes .container .click>div img{
+    float:left;
+    margin-right:25px;
+}
+.classes .container .show{
+    float:right;
+    width:60%;
+    position:relative;
+}
+.classes .container .show .show1{z-index:2;}
+.classes .container .show>div{
+    position:absolute;
+    min-height:530px;
+    top:0px;
+    background-color: #fff;
+}
+
+.classes .container .show>div img{border-radius:8px;}
+.classes .container .show>div h4{
+    margin:20px 0px;
+    font-size:130%;
+    font-weight:bold;
+}
+.classes .container .show>div>div{
+    margin-top:30px;
+    background-color:#ed563b;
+    padding:10px 15px;
+}
+.classes .container .show>div a{
+    text-decoration:none;
+    font-size:120%;
+    color:#fff;
+}
+.classes .container .show>div>div:hover{
+    background-color:#db7462;
+    color:#fff
+}
+
+/*Start schedule*/
+.schedules{
+    background-image:url("../imgs/schedule-bg.jpg");
+    background-size:cover;
+    color:#fff;
+    padding:140px 0px;
+    text-align:center;
+    margin-bottom:100px;
+}
+.schedules p{color:#fff;}
+.schedules .schedules-intro{
+    text-align:center;
+    margin-bottom:60px;
+}
+.schedules .schedules-intro img{
+    margin:15px auto;
+}
+
+
+
+.schedules .intable{
+    margin-bottom:40px;
+}
+.schedules .intable div{display:inline;}
+.schedules .intable .days{
+    padding:5px;
+    color:#fff;
+    text-transform:capitalize;
+    cursor:pointer;
+}
+.schedules .intable .days:hover{color:#ed563b;}
+
+
+.schedules table{
+    border:1px solid #fff;
+    margin:auto;
+    text-transform:capitalize;
+    font-size:90%;
+}
+.schedules table tr td{
+    width:240px;
+    height:100px;
+}
+/*End schedule*/
+/*start trainers*/
+section.trainers{margin-bottom:100px;}
+section.trainers .expert{
+    text-align:center;
+    margin-bottom:75px;
+}
+section.trainers .expert img{margin:15px auto;}
+
+section.trainers .container .extrainers .trainer{
+    width:30%;
+    height:;
+    display:inline-block;
+    margin:0px 15px;
+    box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+    padding:35px
+}
+section.trainers .container .extrainers .trainer img{
+    width:98%;
+    height:98%;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+section.trainers .container .extrainers .trainer span{font-size:70%;}
+section.trainers .container .extrainers .trainer h3{font-weight:bold;margin:10px 0px;}
+/*end trainers*/
+/*start contact*/
+section.contact{overflow:hidden;}
+section.contact .map,
+section.contact .contact-us{display:inline-block;}
+section.contact .map{
+    width:50%;
+    height:650px;
+    float:left;
+}
+section.contact .map iframe{border:0px;}
+section.contact .contact-us{
+    width:50%;
+    height:650px;
+    background-image:url("../imgs/contact-bg.jpg");
+    background-size:cover;
+    padding:;
+    float:right;
+}
+section.contact .contact-us .contact-us1{
+    width:80%;
+    padding:50px;
+    margin: 100px auto;
+    border-radius:5px;
+    background-color:#fff;
+}
+section.contact .contact-us .contact-us1 form input,
+section.contact .contact-us .contact-us1 form textarea{
+    font-size:80%;
+    border:.2px solid #ddd;
+    padding:10px;
+    margin-bottom:30px;
+}
+section.contact .contact-us .contact-us1 form input[name="user-name"]{margin-right:15px}
+
+section.contact .contact-us .contact-us1 form input[name="user-name"],
+section.contact .contact-us .contact-us1 form input[name="user-email"]{width:47%;}
+
+section.contact .contact-us .contact-us1 form input[name="subject"]{width:100%;}
+section.contact .contact-us .contact-us1 form textarea{
+    width:100%;
+    height:150px;
+    resize:none;
+}
+section.contact .contact-us .contact-us1 form button{
+    border:0px;
+    color:#ffffff;
+    background-color:#ed563b;
+    padding:10px;
+}
+section.contact .contact-us .contact-us1 form button:hover{
+    background-color:#db7462;
+    color:#fff;
+}
+/*end contact*/
+/*start footer*/
+footer{
+    text-align:center;
+    height:100px;
+}
+footer p{
+    line-height:100px;
+    color:black;
+}
+footer p a{color:#ed563b;}
+/*end footer*/
